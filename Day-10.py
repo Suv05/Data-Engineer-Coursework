@@ -10,5 +10,10 @@ def isGreater(a, b):
         print("b is greater")
 
 
+#this means i will come to this later now run other code
+def isSmaller(a,b):
+    pass
+
+
 print(calculateMean(4, 5))
 isGreater(4,5)
