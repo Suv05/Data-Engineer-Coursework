@@ -1,4 +1,6 @@
 # video-25 tuple methods
+
+#tuples are immutable
 tup = (1, 7, 8, 9, 9, 5)
 l1 = list(tup)
 l1.append("hello")
