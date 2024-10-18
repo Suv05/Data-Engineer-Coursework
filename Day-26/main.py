@@ -28,13 +28,23 @@
 # f.close()
 
 
+# seek file and tell file function
+# with open('my-file1.txt', 'r') as f:
+#     print(type(f))
+#     # move to  the 10th byte in the file
+#     f.seek(10)
+#
+#     # read the next 5 bytes
+#     data = f.read(5)
+#     print(data)
+#
+# # tells where the current position of bytes or to track location
+#     print(f.tell())
 
-#seek file and tell file function
-with open('my-file1.txt', 'r') as f:
-    print(type(f))
-    # move to  the 10th byte in the file
-    f.seek(10)
+# truncate
+with open('my-file3.txt', 'w') as f:
+    f.write('you have to love me Ankita at any cost')
+    f.truncate(5)
 
-    # read the next 5 bytes
-    data = f.read(5)
-    print(data)
+with open('my-file3.txt', 'r') as f:
+    print(f.read())
