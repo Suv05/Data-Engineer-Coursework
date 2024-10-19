@@ -9,7 +9,10 @@ class Details:
 
 
 # Create an object and call the method
-a = Details()
-a.job = "cleaner"
-a.name = "suv"
-a.info()
+# a = Details()
+# a.job = "cleaner"
+# a.name = "suv"
+# a.info()
+
+b=Details()
+b.info()
