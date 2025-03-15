@@ -4,7 +4,7 @@ import pandas as pd
 from bs4 import BeautifulSoup
 
 url = "https://web.archive.org/web/20230902185655/https://en.everybodywiki.com/100_Most_Highly-Ranked_Films"
-db_name = "Movies.db"
+db_name = "./Web Scarping/Movies.db"
 table_name = "Top_50"
 csv_path = "./Web Scarping/top_50_films.csv"
 df = pd.DataFrame(columns=["Average Rank", "Film", "Year", "Rotten Tomatoes' Top 100"])
