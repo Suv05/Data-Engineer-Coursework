@@ -1,4 +1,4 @@
-#! /usr/bin/bash
+#!/usr/bin/bash
 # This script accepts the user\'s name and prints 
 # a message greeting the user
 
