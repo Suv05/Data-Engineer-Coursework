@@ -1,0 +1,44 @@
+services:
+  # PostgreSQL database service
+  PostgreSQL:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: postgres
+    ports:
+      - 5432:5432
+    networks:
+      - etl-network
+    volumes:
+      - ./source_db/int.sql:/docker-entrypoint-initdb.d/int.sql
+
+  destination_PostgreSQL:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: postgres
+    ports:
+      - 5434:5432
+    networks:
+      - etl-network
+    volumes:
+      - ./source_db/int.sql:/docker-entrypoint-initdb.d/int.sql
+
+  etl_script:
+    build:
+      context: ./elt
+      dockerfile: Dockerfile
+    command: [ "python", "elt.py" ]
+    ports:
+      - "8080:8080"
+    networks:
+      - etl-network
+    depends_on:
+      - PostgreSQL
+      - destination_PostgreSQL
+
+networks:
+  etl-network:
+    driver: bridge
