@@ -1,0 +1,440 @@
+-- Dummy Data for customers table
+customers (
+    first_name,
+    last_name,
+    email,
+    registration_date,
+    city,
+    country
+) (
+    'Alice',
+    'Smith',
+    'alice.smith@example.com',
+    '2023-01-15',
+    'New York',
+    'USA'
+),
+(
+    'Bob',
+    'Johnson',
+    'bob.johnson@example.com',
+    '2023-02-20',
+    'Los Angeles',
+    'USA'
+),
+(
+    'Charlie',
+    'Brown',
+    'charlie.brown@example.com',
+    '2023-03-10',
+    'London',
+    'UK'
+),
+(
+    'Diana',
+    'Miller',
+    'diana.miller@example.com',
+    '2023-04-05',
+    'Paris',
+    'France'
+),
+(
+    'Eve',
+    'Davis',
+    'eve.davis@example.com',
+    '2023-05-12',
+    'Berlin',
+    'Germany'
+),
+(
+    'Frank',
+    'Garcia',
+    'frank.garcia@example.com',
+    '2023-06-18',
+    'Madrid',
+    'Spain'
+),
+(
+    'Grace',
+    'Rodriguez',
+    'grace.rodriguez@example.com',
+    '2023-07-22',
+    'Mexico City',
+    'Mexico'
+),
+(
+    'Henry',
+    'Martinez',
+    'henry.martinez@example.com',
+    '2023-08-01',
+    'Tokyo',
+    'Japan'
+),
+(
+    'Ivy',
+    'Hernandez',
+    'ivy.hernandez@example.com',
+    '2023-09-09',
+    'Sydney',
+    'Australia'
+),
+(
+    'Jack',
+    'Lopez',
+    'jack.lopez@example.com',
+    '2023-10-14',
+    'Toronto',
+    'Canada'
+),
+(
+    'Karen',
+    'Gonzalez',
+    'karen.gonzalez@example.com',
+    '2023-11-25',
+    'Rome',
+    'Italy'
+),
+(
+    'Liam',
+    'Perez',
+    'liam.perez@example.com',
+    '2023-12-03',
+    'Rio de Janeiro',
+    'Brazil'
+),
+(
+    'Mia',
+    'Sanchez',
+    'mia.sanchez@example.com',
+    '2024-01-01',
+    'Shanghai',
+    'China'
+),
+(
+    'Noah',
+    'Ramirez',
+    'noah.ramirez@example.com',
+    '2024-02-11',
+    'Moscow',
+    'Russia'
+),
+(
+    'Olivia',
+    'Torres',
+    'olivia.torres@example.com',
+    '2024-03-19',
+    'Dubai',
+    'UAE'
+),
+(
+    'Peter',
+    'Flores',
+    'peter.flores@example.com',
+    '2024-04-28',
+    'Cape Town',
+    'South Africa'
+),
+(
+    'Quinn',
+    'Rivera',
+    'quinn.rivera@example.com',
+    '2024-05-07',
+    'Seoul',
+    'South Korea'
+),
+(
+    'Rachel',
+    'Gomez',
+    'rachel.gomez@example.com',
+    '2024-06-16',
+    'Buenos Aires',
+    'Argentina'
+),
+(
+    'Sam',
+    'Diaz',
+    'sam.diaz@example.com',
+    '2024-06-25',
+    'Cairo',
+    'Egypt'
+),
+(
+    'Tina',
+    'Reyes',
+    'tina.reyes@example.com',
+    '2024-07-01',
+    'Mumbai',
+    'India'
+);
+
+-- Dummy Data for orders table
+-- Assuming customer_id starts from 1 for SERIAL PRIMARY KEY
+orders (
+    customer_id,
+    order_date,
+    total_amount,
+    status,
+    product_category
+) (
+    1,
+    '2023-01-20 10:00:00',
+    150.75,
+    'Completed',
+    'Electronics'
+),
+(
+    1,
+    '2023-02-01 14:30:00',
+    50.00,
+    'Pending',
+    'Books'
+),
+(
+    2,
+    '2023-03-05 11:15:00',
+    300.50,
+    'Completed',
+    'Home Goods'
+),
+(
+    3,
+    '2023-03-15 09:00:00',
+    75.20,
+    'Shipped',
+    'Clothing'
+),
+(
+    4,
+    '2023-04-10 16:45:00',
+    220.00,
+    'Completed',
+    'Electronics'
+),
+(
+    5,
+    '2023-05-20 13:00:00',
+    45.99,
+    'Pending',
+    'Books'
+),
+(
+    6,
+    '2023-06-25 10:30:00',
+    180.00,
+    'Shipped',
+    'Sports'
+),
+(
+    7,
+    '2023-07-30 11:00:00',
+    99.99,
+    'Completed',
+    'Toys'
+),
+(
+    8,
+    '2023-08-05 15:00:00',
+    600.25,
+    'Completed',
+    'Electronics'
+),
+(
+    9,
+    '2023-09-10 12:00:00',
+    120.50,
+    'Pending',
+    'Clothing'
+),
+(
+    10,
+    '2023-10-20 08:00:00',
+    35.00,
+    'Shipped',
+    'Books'
+),
+(
+    11,
+    '2023-11-30 17:00:00',
+    500.00,
+    'Completed',
+    'Home Goods'
+),
+(
+    12,
+    '2023-12-05 09:30:00',
+    88.75,
+    'Completed',
+    'Sports'
+),
+(
+    13,
+    '2024-01-10 14:00:00',
+    110.00,
+    'Pending',
+    'Electronics'
+),
+(
+    14,
+    '2024-02-15 10:00:00',
+    25.50,
+    'Shipped',
+    'Books'
+),
+(
+    15,
+    '2024-03-20 11:00:00',
+    199.99,
+    'Completed',
+    'Clothing'
+),
+(
+    16,
+    '2024-04-30 16:00:00',
+    75.00,
+    'Pending',
+    'Toys'
+),
+(
+    17,
+    '2024-05-10 13:00:00',
+    320.00,
+    'Completed',
+    'Electronics'
+),
+(
+    18,
+    '2024-06-20 09:00:00',
+    60.00,
+    'Shipped',
+    'Books'
+),
+(
+    19,
+    '2024-07-01 12:00:00',
+    140.00,
+    'Completed',
+    'Home Goods'
+),
+(
+    1,
+    '2024-07-02 08:00:00',
+    20.00,
+    'Pending',
+    'Books'
+),
+(
+    2,
+    '2024-07-02 09:00:00',
+    45.00,
+    'Shipped',
+    'Clothing'
+),
+(
+    3,
+    '2024-07-02 10:00:00',
+    80.00,
+    'Completed',
+    'Electronics'
+),
+(
+    4,
+    '2024-07-02 11:00:00',
+    10.00,
+    'Pending',
+    'Books'
+),
+(
+    5,
+    '2024-07-02 12:00:00',
+    120.00,
+    'Shipped',
+    'Home Goods'
+),
+(
+    6,
+    '2024-07-02 13:00:00',
+    55.00,
+    'Completed',
+    'Sports'
+),
+(
+    7,
+    '2024-07-02 14:00:00',
+    90.00,
+    'Pending',
+    'Toys'
+),
+(
+    8,
+    '2024-07-02 15:00:00',
+    250.00,
+    'Shipped',
+    'Electronics'
+),
+(
+    9,
+    '2024-07-02 16:00:00',
+    30.00,
+    'Completed',
+    'Books'
+),
+(
+    10,
+    '2024-07-02 17:00:00',
+    70.00,
+    'Pending',
+    'Clothing'
+);
+
+-- Dummy Data for order_items table
+-- Assuming order_id starts from 1 for SERIAL PRIMARY KEY
+order_items (order_id, product_name, quantity, unit_price) (1, 'Laptop Pro X', 1, 1200.00),
+(1, 'Wireless Mouse', 1, 25.75),
+(2, 'The Great Novel', 1, 15.00),
+(2, 'Cookbook Basics', 1, 10.00),
+(3, 'Smart Coffee Maker', 1, 150.50),
+(3, 'Blender 2000', 1, 80.00),
+(4, 'T-Shirt Cotton', 2, 20.00),
+(4, 'Jeans Slim Fit', 1, 35.20),
+(5, 'Noise Cancelling Headphones', 1, 200.00),
+(5, 'USB-C Hub', 1, 20.00),
+(6, 'Fantasy Adventure Book', 1, 12.99),
+(6, 'Sci-Fi Thriller', 1, 18.00),
+(7, 'Yoga Mat Pro', 1, 30.00),
+(7, 'Dumbbell Set 10kg', 1, 150.00),
+(8, 'Robot Toy Car', 1, 49.99),
+(8, 'Building Blocks Set', 1, 50.00),
+(9, '4K Smart TV', 1, 550.25),
+(9, 'Soundbar Home Cinema', 1, 50.00),
+(10, 'Winter Jacket', 1, 90.50),
+(10, 'Scarf Wool', 1, 30.00),
+(11, 'Classic Literature', 1, 10.00),
+(11, 'Self-Help Guide', 1, 25.00),
+(12, 'Designer Lamp', 1, 250.00),
+(12, 'Memory Foam Pillow', 2, 125.00),
+(13, 'Running Shoes', 1, 60.00),
+(13, 'Fitness Tracker', 1, 28.75),
+(14, 'Portable Speaker', 1, 80.00),
+(14, 'Power Bank 10000mAh', 1, 30.00),
+(15, 'Children Story Book', 1, 8.50),
+(15, 'Educational Puzzle', 1, 17.00),
+(16, 'Dress Shirt', 1, 45.00),
+(16, 'Formal Trousers', 1, 54.99),
+(17, 'Action Figure', 1, 25.00),
+(17, 'Board Game', 1, 50.00),
+(18, 'Gaming PC', 1, 300.00),
+(18, 'Gaming Monitor', 1, 20.00),
+(19, 'Mystery Novel', 1, 15.00),
+(19, 'Thriller eBook', 1, 45.00),
+(20, 'Smart Home Hub', 1, 100.00),
+(20, 'Smart Light Bulbs', 2, 20.00),
+(21, 'Fiction Novel', 1, 20.00),
+(22, 'Casual Shirt', 1, 45.00),
+(23, 'Smartphone', 1, 80.00),
+(24, 'Kids Book', 1, 10.00),
+(25, 'Kitchen Mixer', 1, 120.00),
+(26, 'Soccer Ball', 1, 55.00),
+(27, 'Teddy Bear', 1, 90.00),
+(28, 'Tablet', 1, 250.00),
+(29, 'Magazine', 1, 30.00),
+(30, 'Hoodie', 1, 70.00);
