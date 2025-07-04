@@ -1,18 +1,4 @@
 -- Active: 1751469617468@@127.0.0.1@5432@New_Data
-SELECT
-    *
-FROM
-    customers;
-
-SELECT
-    *
-FROM
-    orders;
-
-SELECT
-    *
-FROM
-    order_items;
 
 --11. Customer Order Details
 -- → List each order with customer’s name, email, and city.
