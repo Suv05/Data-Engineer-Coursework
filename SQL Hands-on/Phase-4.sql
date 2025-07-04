@@ -1,18 +1,4 @@
 -- Active: 1751469617468@@127.0.0.1@5432@New_Data
-SELECT
-    *
-FROM
-    customers;
-
-SELECT
-    *
-FROM
-    orders;
-
-SELECT
-    *
-FROM
-    order_items;
 
 --16. Most Recent Order per Customer
 -- → Show each customer’s most recent order (using CTE or window).
@@ -58,5 +44,23 @@ WHERE rn=1;
 
 --19. Running Total of Orders by Date
 -- → Compute cumulative revenue (running sum) by order date
+SELECT order_date,total_amount,
+SUM(total_amount) OVER(
+    ORDER BY order_date 
+    ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW
+    ) as running_sum
+FROM orders
+ORDER BY order_date ASC;
 
-
+--20. Repeat Customers
+-- → List customers who placed more than 1 order.
+WITH  t1 AS(
+SELECT 
+concat (c.first_name, ' ', c.last_name) AS customer_name,
+count(*) As total_orders
+FROM customers c
+JOIN orders o
+ON c.customer_id=o.customer_id
+GROUP BY c.customer_id)
+SELECT * FROM t1
+WHERE total_orders>1;
