@@ -218,5 +218,15 @@
     "UnitPrice": 299.99,
     "OrderDate": "2024-01-31",
     "Country": "Australia"
+  },
+  {
+    "OrderID": "ORD018",
+    "CustomerID": "CUST101",
+    "ProductID": "PROD010",
+    "ProductName": "Smartwatch X",
+    "Quantity": 3,
+    "UnitPrice": 399.99,
+    "OrderDate": "2025-01-31",
+    "Country": "India"
   }
 ]
