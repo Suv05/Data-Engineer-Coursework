@@ -28,8 +28,8 @@ The dataset mimics a **retail e-commerce orders system** with the following feat
 ## 🔄 Project Workflow
 
 ### ✅ 1. Data Ingestion
-- Imported raw CSV into Databricks using the FileStore/DBFS.
-- Inferred schema and read as a Spark DataFrame.
+- Imported raw CSV into Databricks using the databricks/volume.
+- StructType schema and read as a Spark DataFrame.
 
 ### ✅ 2. Data Validation
 - Detected missing/null fields across critical columns.
@@ -50,10 +50,17 @@ The dataset mimics a **retail e-commerce orders system** with the following feat
   - `IsDelayedDelivery`
 - Extracted time-based features (Year, Month).
 
-### ✅ 4. Data Storage
+### ✅ 4. AGGREGATIONS AND BUSINESS METRICS
+- SALES PERFORMANCE ANALYSIS
+- Sales by country
+- Product Performance Analysis
+- Customer Segment Analysis
+- Payment Method Analysis
+
+### ✅ 5. Data Storage
 - Saved the cleaned and transformed dataset in **Parquet format** for optimized performance and storage.
 
-### ✅ 5. Interactive Dashboards (Visual Analytics)
+### ✅ 6. Interactive Dashboards (Visual Analytics)
 Used Databricks dashboards to visualize insights and monitor key performance metrics:
 
 ---
