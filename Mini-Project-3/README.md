@@ -68,22 +68,26 @@ Used Databricks dashboards to visualize insights and monitor key performance met
 ## 📊 Dashboards & Insights
 
 ### 🧮 Customer Lifetime Value vs Number of Orders
-![Customer lifetime value vs number of orders](/image/image.png)
+![image](https://github.com/user-attachments/assets/7e4710bc-d19c-455c-b4c2-523731afc98e)
+
 
 ---
 
 ### 🚚 Shipping Status Distribution
-![Shipping status distribution](/image/image-1.png)
+![image](https://github.com/user-attachments/assets/3b8def00-f302-4e18-b097-4ebf0f087dfd)
+
 
 ---
 
 ### 🌍 Shipping Performance by Country and Status
-![Shipping performance by country and status](/image/image-2.png)
+![image](https://github.com/user-attachments/assets/c16cd71d-75a0-4ec9-895f-6361b2c4954f)
+
 
 ---
 
 ### 🔁 Customer Order Frequency Distribution
-![Customer order frequency distribution](/image/image-3.png)
+![image](https://github.com/user-attachments/assets/30fc4768-2714-44bf-a49a-bb91d349abf3)
+
 
 ---
 
@@ -108,7 +112,8 @@ Used Databricks dashboards to visualize insights and monitor key performance met
 ---
 
 ### 🕒 Daily Sales (Smoothed View)
-![Daily sales with 7-day moving avg ](/image/image-8.png)
+![image](https://github.com/user-attachments/assets/4a67ec19-192e-4914-a01a-c75e55362a9d)
+
 
 ---
 
