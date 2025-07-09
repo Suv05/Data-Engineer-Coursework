@@ -92,22 +92,25 @@ Used Databricks dashboards to visualize insights and monitor key performance met
 ---
 
 ### 📅 Daily Sales with 7-Day Moving Average
-![Daily sales with 7-day moving average](/image/image-4.png)
+![Screenshot 2025-07-10 012856](https://github.com/user-attachments/assets/9af97fde-a21c-4670-bd01-0f74530c6e48)
 
 ---
 
 ### 💰 Revenue by Customer Segment
-![Revenue by customer segment](/image/image-5.png)
+![Screenshot 2025-07-10 012720](https://github.com/user-attachments/assets/23d3029c-baa2-412b-a66d-73c3df9811d5)
+
 
 ---
 
 ### 🌐 Order Distribution by Country
-![Order distribution By country](/image/image-6.png)
+![Screenshot 2025-07-10 012545](https://github.com/user-attachments/assets/37a1634f-62ed-4e82-89c0-0681177a3a45)
+
 
 ---
 
 ### 📈 Order Trends Over Time
-![Order trends over time](/image/image-7.png)
+![Screenshot 2025-07-10 012502](https://github.com/user-attachments/assets/8c9d926a-b2c4-4b57-a560-2e15646a20d3)
+
 
 ---
 
